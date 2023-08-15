@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Return : Always 0(success)
  *this program prints in alphabets in lowercase
  */
 int main(void)
@@ -15,6 +13,5 @@ int main(void)
 	alphabet++;
 }
 putchar('\n');
-
 return (0);
 }

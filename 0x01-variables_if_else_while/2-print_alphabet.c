@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/**
+/*
+ *main - entry point
  *this program prints in alphabets in lowercase
  */
 int main(void)

@@ -10,8 +10,7 @@
 */
 
 int main(void)
-{
-/*random number is generated every time*/
+{/*random number is generated every time*/
 
 int n;
 int last_digit;

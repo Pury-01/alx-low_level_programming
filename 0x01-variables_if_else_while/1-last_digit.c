@@ -4,16 +4,16 @@
 
 /**
 *Main - Entry point
-*Return: Always 0(success)
 *This program will generate a random number
 *It will then display the last digit
+*Return : Always 0(success)
 */
 
 int main(void)
 {/*random number is generated every time*/
 
 int n;
-int last_digit;
+int last_digit; /*the last digit of a number*/
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;

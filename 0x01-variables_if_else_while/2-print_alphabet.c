@@ -3,6 +3,7 @@
 /*
  *main - entry point
  *this program prints in alphabets in lowercase
+ *Return : Always 0(success)
  */
 int main(void)
 {

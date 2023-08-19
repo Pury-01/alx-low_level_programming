@@ -9,21 +9,20 @@
 
 int main(void)
 {
-	char letter < = 'a';
+int lowercase  = 'a';
 
-while (letter <= 'z')
+while (lowercase <= 'z')
 {
-	putchar(letter);
-	letter++;
-}
-
-if (letter != 'q' && letter != 'e')
+if (lowercase == 'q' || lowercase == 'e')
 {
-	putchar(letter);
-       letter++;
+lowercase  += 1;
 }
-
-       putchar('\n');
-       
+else
+{
+putchar(lowercase);
+lowercase += 1;
+}
+}
+putchar('\n');
 return (0);
 }

@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
-*Main - Entry point
-*This program will generate a random number
+*Main -This program will generate a random number
 *It will then display the last digit
 *Return : Always 0(success)
 */

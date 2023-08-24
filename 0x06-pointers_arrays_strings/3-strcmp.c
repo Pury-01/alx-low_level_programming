@@ -4,7 +4,7 @@
  *compares two strings
  *@s1: string for comparison
  *@s2: second string for comparison
- *Return: s1[i] - s2[i]
+ *Return: 0 if equal,else greater than or less than other
  */
 
 

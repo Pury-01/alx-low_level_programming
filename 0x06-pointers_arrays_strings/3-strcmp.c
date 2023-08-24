@@ -4,7 +4,7 @@
  *compares two strings
  *@s1: string for comparison
  *@s2: second string for comparison
- *Return: 0
+ *Return: difference in string length
  */
 
 

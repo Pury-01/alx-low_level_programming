@@ -2,7 +2,6 @@
 
 /**
  *_strchr - locates a character string
- *@*s: a pointer to the string
  *@c: character being located
  *@s: string where c is searched
  *Return: &s[i] if c is found, else 0

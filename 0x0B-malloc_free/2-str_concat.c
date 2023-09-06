@@ -3,8 +3,8 @@
 
 /**
  *str_concat - concatenates two strings
- @s1: pointer to the first string
- @s2: pointer to the second string
+ @'s1': pointer to the first string
+ @'s2': pointer to the second string
  *Return: pointer to new space in memory, else NULL
  */
 

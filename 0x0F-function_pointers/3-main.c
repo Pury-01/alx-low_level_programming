@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "cal.h"
-#include <string.h>
-#include <stddef.h>
+#include "3-calc.h"
 
 /**
  *main - function that performs simple operations
@@ -11,10 +9,12 @@
  *Return: 0 if success, -1 if error 
  */
 
-int main(int (void) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int num1;
+	int num2;
 	char *op;
+	(void)argc;
 
 	if (argc != 4)
 	{
@@ -25,7 +25,7 @@ int main(int (void) argc, char *argv[])
 	op = argv[2];
 	num2 = atoi(argv[3]);
 
-	if (argv[2] != op[])
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit (99);
@@ -37,7 +37,7 @@ int main(int (void) argc, char *argv[])
 		exit (100);
 	}
 
-	printf("%d\n", argv[2](num1, num2));
+	printf("%d\n", get_op_func(op)(num1, num2));
 	return (0);
 }
 

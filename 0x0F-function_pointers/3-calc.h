@@ -1,5 +1,5 @@
-#ifndef CAL_H
-#define CAL_H
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdio.h>
 #include <stddef.h>
@@ -26,6 +26,6 @@ int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
 
-#ifndef 
+#endif
 
 

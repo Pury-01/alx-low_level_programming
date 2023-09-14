@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stddef.h>
-#include <string.h>
 
 /**
  *struct op - structure of operations
@@ -11,8 +10,7 @@
  *@f: the function associated
  */
 
-
- typedef struct op
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
@@ -25,7 +23,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-
 #endif
-
-

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *get_op_funct - selects the correct function 
+ *get_op_funct - selects the correct function
  *@s: the operator passed as argument to the program
  *Return: pointer to the function op_add
  */
@@ -23,4 +23,3 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	return (ops[i].f);
 }
-

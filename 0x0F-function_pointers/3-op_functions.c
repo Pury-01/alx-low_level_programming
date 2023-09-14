@@ -21,7 +21,7 @@ int op_add(int a, int b)
 
 /**
  *op_sub - returns the difference
- *@a: number one 
+ *@a: number one
  *@b: number two
  *Return: difference of a and b
  */
@@ -45,7 +45,7 @@ int op_div(int a, int b)
 
 /**
  *op_mul -returns the product of multiplication
- *@a: number one 
+ *@a: number one
  *@b: number two
  *Return: result of the product of a and b
  */
@@ -66,4 +66,3 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
-

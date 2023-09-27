@@ -2,10 +2,10 @@
 
 /**
  *is_prime_number - checks if interger is a prime number
- *@n: the number to be checked
- *is_prime_helper - called help find prime numbers
- *@i: divisor used to determine a prime number
- *Return: 1 if integer is prime number, else 0
+ *is_prime_helper - helps find prime numbers
+ *@n: number being checked
+ *@i: number used as a divisor
+ *Return: 1 if a prime number else 0
  */
 
 int is_prime_helper(int n, int i)

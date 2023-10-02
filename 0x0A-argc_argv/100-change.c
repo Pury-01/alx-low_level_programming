@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- *main - prints the minimum number of coins to make change 
+ *main - prints the minimum number of coins to make change
  *@argc: number of arguments passed
- *argv: array of elements
- *Return: 1 if argc is not 1, 0 if negative 
+ *@argv: array of strings
+ *Return: 1 if argc is not 1, 0 if negative
  */
 
 int main(int argc, char *argv[])
@@ -27,9 +27,9 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for(i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)
 	{
-		while(cents >= coins[i])
+		while (cents >= coins[i])
 		{
 			cents = cents - coins[i];
 			total_coins++;

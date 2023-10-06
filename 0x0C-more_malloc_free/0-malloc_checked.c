@@ -5,22 +5,19 @@
 /**
  *malloc_checked - function that allocates memory
  *
- *@b: variable being allocated memory for
+ *@b: number of bytes being allocated
  *
  *Return: pointer to allocated memory, if it fails exit 98
  */
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *ptr;
+	void *ptr;
 
-	ptr = &b;
-
-	ptr = malloc(sizeof(unsigned int));
+	ptr = malloc(b);
 	if (ptr == NULL)
 	{
 		exit(98);
 	}
 	return (ptr);
 }
-

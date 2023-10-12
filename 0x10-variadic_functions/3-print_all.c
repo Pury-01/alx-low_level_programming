@@ -17,8 +17,6 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format && *fmt)
 	{
-		int i = 0;
-
 		if (*fmt == 'c')
 		{
 			printf("%s%c", separator, va_arg(args, int));
@@ -43,14 +41,7 @@ void print_all(const char * const format, ...)
 				printf("%s%s", separator, strng);
 			}
 		}
-		else
-		{
-			i = 1;
-		}
-		if (!i)
-		{
 		separator = ", ";
-		}
 		fmt++;
 	}
 	printf("\n");

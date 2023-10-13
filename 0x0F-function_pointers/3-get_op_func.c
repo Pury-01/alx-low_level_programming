@@ -2,7 +2,7 @@
 
 /**
  *get_op_func - selects function to perform the operation
- *@s: the operator
+ *@s: the operator passed as argument
  *
  *Return: pointer to the selected function
  *NULL if not found
@@ -20,13 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL)
-	{
-		if (*s == *ops[i].op && s[1] == '\0')
-		{
-			return (ops[i].f);
-		}
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
-	}
-	return (NULL);
+	return (ops[i].f);
 }

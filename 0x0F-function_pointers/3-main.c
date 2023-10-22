@@ -11,26 +11,30 @@
 int main(int argc, char *argv[])
 {
 	int num1;
-	char *operator;
+	char *op;
 	int num2;
-	int outcome;
+	(void)argc;
 
 	if (argc != 4)
 	{
 
-		printf("Usage: %s num1 operator num2\n", argv[0]);
+		printf("Error\n");
 		return (98);
 	}
 	num1 = atoi(argv[1]);
-	operator = argv[2];
+	op = argv[2];
 	num2 = atoi(argv[3]);
 
-	if (get_op_func(operator) == NULL)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
-		prntf("Error\n");
-		return (-1);
+		printf("Error\n");
+		return (99);
 	}
-	outcome = get_op_func(operator)(num1, num2);
-	printf("%d\n", outcome);
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	printf("%d\n", get_op_func(op)(num1, num2));
 	return (0);
 }

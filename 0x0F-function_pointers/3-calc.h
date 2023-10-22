@@ -4,15 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
- op_t ops[] = {
-        {"+", op_add},
-        {"-", op_sub},
-        {"*", op_mul},
-        {"/", op_div},
-        {"%", op_mod},
-        {NULL, NULL}
-    };
-    int i;
+/**
+ *struct op -structure of operations
+ *@op: the operator
+ *@f: function to perform the operation
+ */
+typedef struct op
+{
+	char *op;
+	int (*f)(int a, int b);
+} op_t;
 
 int op_add(int a, int b);
 int op_sub(int a, int b);

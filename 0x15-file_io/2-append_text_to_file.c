@@ -11,24 +11,20 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fil, wirite;
+	int fil, wirite, length = 0;
 
 	if (!filename)
 		return (-1);
+	if (text_content != NULL)
+	{
+		for (length = 0; text_content[length];)
+			length++;
+	}
 	fil = open(filename, O_WRONLY | O_APPEND);
-	if (fil == -1)
+	wirite = write(fil, text_content, length);
+	if (fil == -1 || wirite == -1)
 		return (-1);
-	if (!text_content)
-	{
-		close(fil);
-		return  (1);
-	}
-	wirite = write(fil, text_content, strlen(text_content));
-	if (wirite == -1)
-	{
-		close(fil);
-		return (-1);
-	}
+
 	close(fil);
-	return (1);
+	return  (1);
 }

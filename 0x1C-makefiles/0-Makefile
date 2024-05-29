@@ -1,0 +1,12 @@
+# Usage:
+# make      #compiles all binary
+
+.PHONY: all
+
+CC := gcc
+
+all: school
+
+school: school.c
+    ${CC} school.c -o school
+

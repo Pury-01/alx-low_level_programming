@@ -1,0 +1,9 @@
+# Makefile with 2 variables
+# Usage:
+# make          #compile all binary
+
+CC := gcc
+SRC := main.c school.c
+
+all =$(SRC)
+    ${CC} ${SRC} -o school

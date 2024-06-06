@@ -1,5 +1,4 @@
-# Usage:
-# make      #compiles all binary
+all: school
 
-all: main.c school.c
-    gcc main.c school.c -o school
+school: school.c main.c
+	gcc main.c school.c -o school
